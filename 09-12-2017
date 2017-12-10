@@ -1,0 +1,24 @@
+Q1 Prescriptive Analytics used to predict the future outcomes?
+False
+
+
+Q2 Base R Packages Installed automatically?
+True
+
+
+Q3 Recycling on elements in a vector?
+When applying an operation to two vectors that requires them to be the same length, R automatically recycles, or repeats, 
+the shorter one, until it is long enough to match the longer one.
+
+
+Q4 Example of Recycle of Vector?
+Here is an example:
+
+> c(1,2,4) + c(6,0,9,20,22)
+[1]  7  2 13 21 24
+
+Warning message:
+longer object length is not a multiple of shorter object length in: c(1, 2, 4) + c(6, 0, 9, 20, 22)
+
+The shorter vector was recycled, so the operation was taken to be as follows:
+> c(1,2,4,1,2) + c(6,0,9,20,22)
